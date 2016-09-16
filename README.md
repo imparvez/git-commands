@@ -4,12 +4,12 @@ Description required about the documentation.
 ### Configuration
 Configure user information for all local repositories
 
-**Setting names to the commit attaches**
+Setting names to the commit attaches
 ```sh
 $ git config --global user.name "[name]"
 ```
 
-**Setting email id to the commit attaches**
+Setting email id to the commit attaches
 ```sh
 $ git config --global user.email "[email address]"
 ```
@@ -18,12 +18,12 @@ $ git config --global user.email "[email address]"
 ### Creating a repositories
 Creating a new repository or using the existing repo's URL
 
-**Creating a new local repository**
+Creating a new local repository
 ```sh
 $ git init [project-name] 
 ```
 
-**Using an existing repo**
+Using an existing repo
 ```sh
 $ git clone [repo-url] 
 ```
