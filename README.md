@@ -106,3 +106,14 @@ Fetch all remotes
 ```sh
 $ git fetch --all
 ```
+
+Stash
+```sh
+git stash
+git pull origin develop
+git stash pop
+```
+case study:
+  - Saving the current changes without commiting.
+  - Taking the upstream changes that are relevant to what you are doing.
+  - coming back to what you were doing.
