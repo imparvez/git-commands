@@ -155,3 +155,13 @@ OR
 ```sh
 git log -p filename
 ```
+
+Check the list of remote origin
+```sh
+git remote -v
+```
+
+Change the remote origin or set the new origin
+```sh
+git remote set-url origin NEW-REMOTE-URL
+```
