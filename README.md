@@ -161,6 +161,11 @@ Check the list of remote origin
 git remote -v
 ```
 
+Add a remote origin
+```sh
+git remote add origin REMOTE-URL
+```
+
 Change the remote origin or set the new origin
 ```sh
 git remote set-url origin NEW-REMOTE-URL
