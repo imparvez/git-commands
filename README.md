@@ -170,3 +170,39 @@ Change the remote origin or set the new origin
 ```sh
 git remote set-url origin NEW-REMOTE-URL
 ```
+---
+#### Cherry Picking in Git:
+Cherry picking in Git means to choose a commit from one branch and apply it onto another.
+This is in contrast with other ways such as `merge` and `rebase` which normally apply many commits onto another branch.
+
+Make sure you are on the branch you want to apply the commit to:
+<br />
+`> git checkout my-preferred-branch`
+
+Execute the following:
+<br />
+`> git cherry-pick <commit-hash>`
+
+##### Example:
+Create two branches from master
+<br />
+`> git checkout -b feature-one`
+`> git checkout -b feature-two`
+
+Do make changes feature-one branch and commit and push the changes to same branch.
+Git log and copy the commit hash value
+<br />
+`> git log`
+
+Checkout to feature-two:
+<br />
+`> git checkout feature-two`
+
+Now, using cherry-pick we will pull the commit that just happen on feature-one onto this branch
+<br />
+`$feature-two: git cherry-pick <commit-hash>`
+<br />
+<br />
+You will see all the changes of that commit hash value inside your feature-two branch.
+
+Advantages on merge and rebase is that a specific commit can be pull over rather than all the changes.
