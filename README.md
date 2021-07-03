@@ -89,12 +89,10 @@ $ git merge [branch name]
 
 Delete a branch
 ```sh
-$ git branch -d [branch name]
-```
-
-Forcibly delete the branch
-```sh
-$ git branch -D [branch name]
+// Delete Remote Branch
+git push origin --delete <branch_name>
+// Delete Local Branch
+git branch -D <branch_name>
 ```
 
 Listing version history for the current branch(see all commits)
